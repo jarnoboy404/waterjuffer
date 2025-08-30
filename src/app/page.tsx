@@ -14,7 +14,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 max-w-7xl mx-auto px-10 flex flex-col justify-end items-start mb-30 gap-y-1">
           <h1 className="text-white lg:text-5xl md:text-3xl text-xl font-bold uppercase bg-[rgba(0,0,0,0.5)] p-3">
-            Zwemschool "de Waterjuffer"
+            Zwemschool &quot;de Waterjuffer&quot;
           </h1>
           <h2 className="text-white md:text-sm text-[10px] bg-[rgba(0,0,0,0.5)] p-3">
             De zwemschool voor PRIVE LES en persoonlijke aandacht!
