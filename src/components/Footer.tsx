@@ -24,16 +24,16 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-2 font-extralight text-sm">
                 <FaPhoneAlt color="#E63B72" className="mt-1" />
-                <div>
+                <Link href="tel:0641025079">
                   <span className="font-bold">Telefoon:</span> 06-41025079
-                </div>
+                </Link>
               </div>
               <div className="flex items-start gap-2 font-extralight text-sm">
                 <IoMail color="#E63B72" className="mt-1" />
-                <div>
+                <Link href="mailto:zwemschoolwaterjuffer@gmail.com">
                   <span className="font-bold">E-mail:</span>{" "}
                   zwemschoolwaterjuffer@gmail.com
-                </div>
+                </Link>
               </div>
             </div>
           </div>

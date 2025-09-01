@@ -18,6 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Waterjuffer",
   description: "De zwemschool voor PRIVE LES en persoonlijke aandacht!",
+  other: {
+    "theme-color": "#009BB3",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+  },
   keywords: [
     "Zwemschool",
     "Zwemles",
@@ -77,11 +82,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        <main className="min-w-full min-h-screen">
-          <SWRSessionStorage>{children}</SWRSessionStorage>
-        </main>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1">
+            <SWRSessionStorage>{children}</SWRSessionStorage>
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
